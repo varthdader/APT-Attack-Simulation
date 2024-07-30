@@ -4,10 +4,10 @@ try:
 except ImportError:
     os.system("pip install colored")
 cyann  = fg("cyan")     + attr("bold")
-greenn = fg("#33ff29")  + attr("bold")
-mof    = fg("#ab01ff")  + attr("bold")
+greenn = fg("green")  + attr("bold")
+mof    = fg("violet")  + attr("bold")
 white  = fg("white")    + attr("bold")
-error  = fg("#ff1d00")  + attr("bold")
+error  = fg("red")  + attr("bold")
 bluee = fg("blue")      + attr("bold")
 backg  = error + bg("white")     + attr("bold")
 bk = bg("white")     + attr("bold")
@@ -51,7 +51,7 @@ def arg(outputscr):
     else:
         program = argv[0].split(sep='\\')[-1].split(sep='/')[-1]
         print()
-        print (f"{white}\tHow to use it Exmpales ")
+        print (f"{white}\t How to use it Examples ")
         print(f"""\t{bluee}{bk}{program} {greenn}{backg}<FileName> {mof}<MalwarePath>{style.RESET}""" )
         print (style.RESET)
         print (style.RESET)
