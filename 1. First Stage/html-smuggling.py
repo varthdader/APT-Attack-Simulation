@@ -51,13 +51,13 @@ def arg(outputscr):
     else:
         program = argv[0].split(sep='\\')[-1].split(sep='/')[-1]
         print()
-        print (f"\t How to use it Examples ")
-        print(f"""\tFileName> MalwarePath>""")
+        print (f"\tHow-To Usage Examples")
+        print(f"{program} <FileName> <MalwarePath>")
         c =  f"""
-        \tFileName.exe\tpathfile\malware.exe
-        \tFileName.dll\tpathfile\malware.dll
-        \tFileName.pdf\tpathfile\malware.pdf
-        \tFileName.docx\tpathfile\malware.docx
+        {program}\tFileName.exe\tpathfile\malware.exe
+        {program}\tFileName.dll\tpathfile\malware.dll
+        {program}\tFileName.pdf\tpathfile\malware.pdf
+        {program}\tFileName.docx\tpathfile\malware.docx
         \n\t\t       or any extention
         \n \t FileName You Can set Any Name U want 
           """
