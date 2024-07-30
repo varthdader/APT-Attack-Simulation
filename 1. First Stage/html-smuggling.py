@@ -51,20 +51,17 @@ def arg(outputscr):
     else:
         program = argv[0].split(sep='\\')[-1].split(sep='/')[-1]
         print()
-        print (f"{white}\t How to use it Examples ")
-        print(f"""\t{bluee}{bk}{program} {greenn}{backg}<FileName> {mof}<MalwarePath>{style.RESET}""" )
-        print (style.RESET)
-        print (style.RESET)
+        print (f"\t How to use it Examples ")
+        print(f"""\tFileName> MalwarePath>""")
         c =  f"""
-        {cyann}{program}\t{greenn}FileName.exe\t{mof}pathfile{backg}\malware.exe{style.RESET}
-        {cyann}{program}\t{greenn}FileName.dll\t{mof}pathfile{backg}\malware.dll{style.RESET}
-        {cyann}{program}\t{greenn}FileName.pdf\t{mof}pathfile{backg}\malware.pdf{style.RESET}
-        {cyann}{program}\t{greenn}FileName.docx\t{mof}pathfile{backg}\malware.docx{style.RESET}
-        \n\t\t       {greenn}{backg}or any extention{style.RESET}
-        \n \t {greenn}{backg}FileName{style.RESET} {white}You Can set Any Name U want {style.RESET}
+        \tFileName.exe\tpathfile\malware.exe
+        \tFileName.dll\tpathfile\malware.dll
+        \tFileName.pdf\tpathfile\malware.pdf
+        \tFileName.docx\tpathfile\malware.docx
+        \n\t\t       or any extention
+        \n \t FileName You Can set Any Name U want 
           """
         print(c)
-        print (style.RESET)
         print()
         sys.exit(0)
      # check permissions
